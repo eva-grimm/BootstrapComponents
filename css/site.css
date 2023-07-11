@@ -1,4 +1,4 @@
-/* START: Sticky Footer CSS */
+/* #region Sticky Footer CSS */
 
 /* edits html and body */
 html,
@@ -25,4 +25,4 @@ main {
 footer {
     flex-shrink: 0;
 }
-/* END: Sticky Footer CSS */
+/* #endregion Sticky Footer CSS */
