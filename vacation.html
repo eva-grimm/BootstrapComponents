@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>BSMail</title>
+    <title>Vacation Rentals</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -159,38 +159,54 @@
             </div>
         </div>
 
-        <h1 class="text-center display-4 m-3">Contact Us</h1>
         <!-- contact form -->
-        <form action="" class="row border rounded-2 g-2 p-2">
-            <div class="col-12 col-md-6">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First name" required>
+        <div class="text-center">
+            <!-- button to collapse -->
+            <button class="border-0 display-6 m-3 bg-transparent" data-bs-toggle="collapse" data-bs-target="#contactForm" show>
+                Contact Us
+            </button>
+            <!-- collapsible form -->
+            <div class="collapse text-start show" id="contactForm">
+                <div class="card border rounded-2">
+                    <form action="#" class="row g-2 p-2">
+                    <div class="col-12 col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First name"
+                            required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last name"
+                            required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email" name="Email" id="Email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="phone" class="form-label">Phone (optional)</label>
+                        <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject"
+                            required>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" class="form-control"
+                            placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-12 text-end">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                </div>
+                
             </div>
-            <div class="col-12 col-md-6">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last name" required>
-            </div>
-            <div class="col-12 col-md-6">
-                <label for="Email" class="form-label">Email</label>
-                <input type="email" name="Email" id="Email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="col-12 col-md-6">
-                <label for="phone" class="form-label">Phone (optional)</label>
-                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone">
-            </div>
-            <div class="col-12">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required>
-            </div>
-            <div class="col-12">
-                <label for="message" class="form-label">Message</label>
-                <textarea name="message" id="message" cols="30" rows="5" class="form-control" 
-                placeholder="Message"></textarea>
-            </div>
-            <div class="col-12 text-end">
-                <button class="btn btn-primary">Submit</button>
-            </div>
-        </form>
+        </div>
+
+
     </main>
 
     <footer class="container-fluid bg-body-tertiary py-3" data-bs-theme="dark">
@@ -199,7 +215,7 @@
                 &copy;2023
             </div>
             <div class="col text-sm-center text-light lead">
-                Bootstrap Inbox
+                Coder Foundry Vacation Rentals
             </div>
             <div class="col text-sm-end">
                 <a href="#"><i class="bi bi-facebook text-secondary"></i></a>
