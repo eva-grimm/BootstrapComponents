@@ -15,6 +15,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/site.css">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/css/codertube.css">
 </head>
 
 <body data-bs-theme="dark">
@@ -52,10 +55,10 @@
         <!-- navbar is only as wide as it needs to be, which I've only just noticed in the middle of class that 
         the mockup doesn't do at the wider desktop widths, but you know what? I think this looks better, so I 
         really don't care about 'fixing' it lol -->
-        <nav class="navbar flex-column p-1 text-center float-start navbar-nav-scroll sticky-top overflow-visible" 
-        id="leftNavBar" style="--bs-scroll-height: 100%">
+        <aside nav class="navbar flex-column p-1 text-center float-start navbar-nav-scroll sticky-top overflow-visible"
+            id="leftNavBar" style="--bs-scroll-height: 100%">
             <nav class="list-group" id="icons">
-                <ul class="navbar-nav w-100">
+                <ul class="navbar-nav w-100 sticky-sidebar">
                     <li class="list-group-item nav-item border-0 py-0 rounded bg-secondary">
                         <a href="/codertube.html" class="nav-link d-md-flex active">
                             <i class="bi bi-house"></i>
@@ -149,10 +152,10 @@
                         </a>
                     </li>
                     <hr>
-                    <li class="list-group-item nav-item border-0 py-0 text-start">More...</li>
+                    <li class="list-group-item nav-item border-0 pt-0 pb-5 text-start">More...</li>
                 </ul>
             </nav>
-        </nav>
+        </aside>
 
         <div class="row w-auto row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4" id="videoCluster">
             <!-- dummy videos -->
@@ -162,7 +165,8 @@
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Video title</h5>
+                        <h5 class="card-title line-clamp">Video title that is far too long and really shouldn't be
+                            allowed to show its entire title all at once</h5>
                         <small>
                             <p class="card-text">Channel Name</p>
                             <p>1.2M Views &bullet; Uploaded 4 days ago</p>
