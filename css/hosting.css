@@ -1,0 +1,152 @@
+/* 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+*/
+
+/* pseudo-element */
+:root {
+    /* named variables and set them */
+    --cf-heading-font: 'Bebas Neue', sans-serif;
+    --cf-subtitle-font: 'Fira Sans', sans-serif;
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+.mainHeader {
+    background-image: url(/img/HostingPro576.png);
+    background-color: var(--bs-primary-bg-subtle);
+    height: 200px;
+    /* makes the bg taller than the content*/
+
+    /* changes bg position from default of top left to 
+    top right */
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.mainHeader-content {}
+
+.mainHeader-wrapper {
+    /* rem = unit relative to your font size */
+    padding: 1rem;
+    padding-right: 1rem;
+    width: 48%; /* bit narrower than half to account 
+    for iPhone SE size */
+}
+
+.mainTitle {
+    /* using a var here is superfluous at this size but
+    great when we get to larger websites */
+    font-family: var(--cf-heading-font);
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+.subTitle {
+    font-family: var(--cf-subtitle-font);
+    font-size: .7rem;
+    line-height: .7rem;
+    font-weight: 300;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media is a media query */
+@media (min-width: 576px) {
+    .mainHeader {
+        background-image: url(/img/HostingPro768.png);
+    }
+
+    .mainHeader-wrapper {
+        width: 50%;
+    }
+
+    .mainTitle {
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
+
+    .subTitle {
+        font-size: .9rem;
+        line-height: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .mainHeader {
+        background-image: url(/img/HostingPro992.png);
+        height: 300px;
+    }
+
+    .mainHeader-wrapper {
+        padding: 2.5rem;
+    }
+
+    .mainTitle {
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
+
+    .subTitle {
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mainHeader {
+        background-image: url(/img/HostingPro1200.png);
+        height: 400px;
+    }
+
+    .mainHeader-wrapper {
+        padding: 3.5rem;
+    }
+
+    .mainTitle {
+        font-size: 3.2rem;
+        line-height: 2.8rem;
+    }
+
+    .subTitle {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mainHeader {
+        background-image: url(/img/HostingPro2560.png);
+        height: 500px;
+    }
+
+    .mainHeader-wrapper {
+        padding: 4rem;
+    }
+
+    .mainTitle {
+        font-size: 3.9rem;
+        line-height: 3.4rem;
+    }
+
+    .subTitle {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .mainTitle {
+        font-size: 4.5rem;
+        line-height: 3.8rem;
+    }
+
+    .subTitle {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
