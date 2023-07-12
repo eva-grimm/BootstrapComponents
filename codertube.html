@@ -49,10 +49,9 @@
     </header>
 
     <main class="container-fluid">
-        <nav class="navbar flex-column p-1 text-center float-start navbar-nav-scroll sticky-top overflow-visible"
-            style="--bs-scroll-height: 100%" id="leftNavBar">
-            <nav class="list-group border-bottom w-100 pb-3 px-3 text-secondary-emphasis rounded-0" id="firstIconGrouping">
-                <ul class="navbar-nav">
+        <nav class="navbar flex-column p-1 text-center float-start navbar-nav-scroll sticky-top overflow-visible" id="leftNavBar">
+            <nav class="list-group" id="icons">
+                <ul class="navbar-nav w-100">
                     <li class="list-group-item nav-item border-0 py-0 rounded bg-secondary">
                         <a href="/codertube.html" class="nav-link d-md-flex active">
                             <i class="bi bi-house"></i>
@@ -71,10 +70,7 @@
                             <span class="d-none d-md-block ms-1">Subscriptions</span>
                         </a>
                     </li>
-                </ul>
-            </nav>
-            <nav class="list-group border-bottom w-100 py-3 px-3 rounded-0" id="secondIconGrouping">
-                <ul class="navbar-nav">
+                    <hr>
                     <li class="list-group-item nav-item border-0 py-0">
                         <a href="#" class="nav-link d-md-flex">
                             <i class="bi bi-book"></i>
@@ -87,10 +83,7 @@
                             <span class="d-none d-md-block ms-1">History</span>
                         </a>
                     </li>
-                </ul>
-            </nav>
-            <nav class="list-group border-bottom w-100 py-3 px-3 rounded-0" id="thirdIconGrouping">
-                <ul class="navbar-nav">
+                    <hr>
                     <li class="list-group-item nav-item border-0 py-0">
                         <a href="#" class="nav-link d-md-flex">
                             <i class="bi bi-fire"></i>
@@ -151,206 +144,347 @@
                             <span class="d-none d-md-block ms-1">Podcasts</span>
                         </a>
                     </li>
-                </ul>
-            </nav>
-            <nav class="list-group w-100 py-3 px-3 rounded-0" id="more">
-                <ul class="navbar-nav list-group text-start">
-                    <li class="list-group-item nav-item border-0 py-0">More...</li>
+                    <hr>
+                    <li class="list-group-item nav-item border-0 py-0 text-start">More...</li>
                 </ul>
             </nav>
         </nav>
 
-        <div class="row w-auto" id="videoCluster">
+        <div class="row w-auto row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4" id="videoCluster">
             <!-- dummy videos -->
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 pb-4">
+            <div class="col-12 pb-4">
                 <div class="card mb-3">
                     <div class="card-header bg-secondary text-center py-5">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video title</h5>
-                        <p class="card-text">Channel Name</p>
-                        <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pb-4">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-center py-5">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Video title</h5>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pb-4">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-center py-5">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Video title</h5>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pb-4">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-center py-5">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Video title</h5>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pb-4">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-center py-5">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Video title</h5>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pb-4">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-center py-5">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Video title</h5>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pb-4">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-center py-5">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Video title</h5>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pb-4">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-center py-5">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Video title</h5>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pb-4">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-center py-5">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Video title</h5>
+                        <small>
+                            <p class="card-text">Channel Name</p>
+                            <p>1.2M Views &bullet; Uploaded 4 days ago</p>
+                        </small>
                     </div>
                 </div>
             </div>
